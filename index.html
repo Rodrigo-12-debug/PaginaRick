@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡Tu premio está listo!</title>
+  <style>
+    body {
+      background: radial-gradient(circle, yellow, hotpink);
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      animation: brillar 0.5s infinite alternate;
+    }
+
+    @keyframes brillar {
+      0% { background-color: yellow; }
+      100% { background-color: red; }
+    }
+
+    h1 {
+      font-size: 60px;
+      color: blue;
+      text-shadow: 3px 3px white;
+    }
+
+    img {
+      width: 300px;
+      margin: 20px;
+      border: 5px dashed white;
+      border-radius: 30px;
+      box-shadow: 0 0 20px black;
+    }
+
+    .boton-fake {
+      font-size: 24px;
+      background-color: lime;
+      padding: 20px;
+      border-radius: 15px;
+      border: 4px solid fuchsia;
+      cursor: pointer;
+      animation: rebotar 1s infinite;
+    }
+
+    @keyframes rebotar {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body onload="molestar()">
+  <h1>🎉 ¡FELICIDADES! 🎉</h1>
+  <p>Has ganado un perrito bailarín 100% digital y el nuevo iphone 24 Pro Max reclama ahora! 🥵🥵👻👻</p>
+
+  <!-- Perrito confiable desde Giphy -->
+  <img src="https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif" alt="Perrito feliz" />
+
+  <br><br>
+  <button class="boton-fake" onclick="abrirPopUps()">¡Reclamar premio!</button>
+
+  <audio autoplay loop>
+    <source src="https://www.soundjay.com/human/sounds/scream-01.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function molestar() {
+      alert("🐶 ¡Un perrito está en camino!");
+      confirm("¿Aceptas este regalo peludo?");
+      prompt("Escribe los digitos de la tarjeta de credito para reclamar tu premio junto con el pin: ");
+    }
+
+    function abrirPopUps() {
+      for (let i = 0; i < 3; i++) {
+        window.open("https://www.perro.club/", "_blank", "width=400,height=400");
+      }
+    }
+
+    function molestar2() {
+      alert("Tu ip es 149.68.165.231!");
+    }
+  </script>
+  <class>
+    <h2>¡Gracias por participar!</h2>
+    <p>Esto es una broma, no es necesario reportar la pagina ni nada, luego me bloquean en github, tal vez es un perro digital, ¡pero el amor de un perrito es real! 🐾</p>
+    <p>Recuerda siempre verificar la autenticidad de los premios en línea.</p>
+    <p>Mi github para ver más paginas hechas por mi es href= Rodrigo-12-debug/github</p>
+  </class>
+</body>
+</html>
